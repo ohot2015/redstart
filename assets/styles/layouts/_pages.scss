@@ -1,3 +1,7 @@
+body {
+	max-width: 1980px;
+	margin:0 auto;
+}
 section {
 	overflow: hidden;
 	position: relative;
@@ -10,61 +14,86 @@ section {
 			width: 100%;
 		}
 	}
-}
-
-.blok1,.blok2 {
-	background: #ebebeb;
-	font-size: 30px;
-	height: 1140px;
-	text-align: center;
-}
-.blok1 {
-	margin-top:390px;
-}
-.blok2 {
-	background: #e2e2e2;
-}
-.fbc2{
-	background: #e2e2e2;
-	font-size: 14px;
-	height:1712px;
-	transform:perspective(1000px) rotateY(-7.5deg) translate(-328px,-81px);
-	width:213%;
-	.ffc2 {
-		height:1500px;
-		transform:perspective(1000px) rotateY(7.5deg) translate(220px,81px);
-		width: 100%;
+	.blok1,.blok2 {
+		background: #ebebeb;
+		font-size: 30px;
+		height: 1221px;
+		text-align: center;
+	}
+	.blok1 {
+		margin-top:390px;
+	}
+	.blok2 {
+		background: #e2e2e2;
+	}
+	.fbc2{
+		background: #e2e2e2;
+		font-size: 14px;
+		height:1712px;
+		transform:perspective(1000px) rotateY(-7.5deg) translate(-840px,-165px);
+		width:213%;
+		.ffc2 {
+			height:1500px;
+			transform:perspective(1000px) rotateY(7.5deg) translate(440px,165px);
+			width: 100%;
+		}
+	}
+	.blok3 {
+		border: 1px solid black;
+		height: 1000px;
+		width :100%;
+		z-index: 0
+	}
+	.wrap-bottom {
+		border:1px solid blue;
+		bottom: 0;
+		height: 600px;
+		overflow: hidden;
+		position: absolute;
+		width:100%;
+		.wrap-wrap-map {
+			position: relative;
+			.wrap-map {
+				overflow: hidden;
+				position: absolute;
+				top:0;
+				transform:skewY(-7deg) translate(0px,106px);
+				width: 100%;
+				z-index: 4;
+				border:1px solid red;
+					#map {
+					transform:skewY(7deg) translate(0px,-106px);
+					width: 100%;
+					z-index: 2;
+					border: 1px solid black;
+				}
+			}
+		}
 	}
 }
-.blok3 {
-	//border: 1px solid black;
-	height: 1000px;
-	width :100%;
-	z-index: 0
-}
-.wrap-bottom {
-	//border:1px solid blue;
-	bottom: 0;
-	height: 600px;
-	overflow: hidden;
-	position: absolute;
+.wrap-all {
+	position: relative;
 	width:100%;
-	.wrap-wrap-map {
-		position: relative;
-		.wrap-map {
-			overflow: hidden;
-			position: absolute;
-			top:0;
-			transform:skewY(-7deg) translate(0px,71px);
-			width: 100%;
-			z-index: 4;
-	//		border:1px solid red;
-				#map {
-				transform:skewY(7deg) translate(0px,-71px);
-				width: 100%;
-				z-index: 2;
-	//			border: 1px solid black;
-			}
+	margin: 0 auto;
+	text-align: center;
+}
+.pos-abs {
+	background: #999;
+	width: 970px;
+	left: calc(50% - 970px/2);
+	position: absolute;
+	height:3000px;
+	z-index: 10;
+	.fbc3{
+		background: #575c64;
+		font-size: 14px;
+		height:500px;
+		transform:perspective(1000px) rotateY(-7.5deg) translate(-840px,-165px);
+		width:970px;
+		.ffc3 {
+			height:500px;
+			transform:perspective(1000px) rotateY(7.5deg) translate(440px,165px);
+			//width: 100%;
 		}
 	}
 }

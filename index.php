@@ -6,15 +6,16 @@
 	<link rel="stylesheet" href="dist/styles/main.css">
 </head>
 <body>
+<div class="wrap-all">
 	<header>
 		<div class="wrap-header">
 				<div class="row">
-					<div class="col-md-2"><img src="dist/images/menu.png" alt=""></div>
+					<div class="col-md-1 text-left"><img src="dist/images/menu.png" alt=""></div>
 					<div class="col-md-2"><span>red</span>start</div>
 					<div class="col-md-2">Lorem ipsum.</div>
+					<div class="col-md-3">Lorem ipsum.</div>
 					<div class="col-md-2">Lorem ipsum.</div>
-					<div class="col-md-2">Lorem ipsum.</div>
-					<div class="col-md-2">Lorem ipsum.</div>
+					<div class="col-md-2 text-right">Lorem ipsum.</div>
 				</div>
 			</div>
 		<div class="row">
@@ -24,23 +25,33 @@
 		</div>
 
 	</header>
+
+	<section class="pos-abs">
+		<div class="fbc3">
+			<div class="ffc3">
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis reiciendis minima est? Labore nemo possimus est commodi in distinctio fuga ut numquam iste consequatur expedita accusamus exercitationem at enim inventore beatae, officia sapiente? Vel velit repellat eius quod perferendis ducimus molestiae, voluptatum consequatur necessitatibus molestias iure incidunt voluptas, dolore eaque!
+			</div>
+		</div>
+	</section>
+
 	<section>
 		<div class="fbc1 blok1">
 			<div class="ffc1">
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem velit unde repellat itaque molestias explicabo eaque deleniti aut ratione iste, tempora debitis qui commodi officia animi est et quia voluptatum.
+
 			</div>
 		</div>
 		<div class="fbc2">
 			<div class="ffc2">
 				<div class="test4">
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem velit unde repellat itaque molestias explicabo eaque deleniti aut ratione iste, tempora debitis qui commodi officia animi est et quia voluptatum.
+
 				</div>
 			</div>
 		</div>
 		<div class="blok3">
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium beatae et ut nihil, tempora ipsum optio inventore consequatur saepe velit mollitia omnis alias, natus nemo dolorem nisi. Optio laudantium minus temporibus atque dolorem minima mollitia laboriosam in illo. Ipsa voluptatem porro dolor quis obcaecati sint eius veritatis repellat, ullam consectetur velit molestias excepturi molestiae, quaerat laudantium. Numquam nobis unde quis, quo, suscipit ipsum hic doloribus, voluptatem aliquid iure inventore. Molestiae voluptatibus illo consequuntur officiis, officia nulla, magnam harum ducimus obcaecati. Dolor rerum animi recusandae tempora fugit tempore, sint deleniti! Sapiente repellendus, maxime at facilis, placeat rerum ad a odit error.
+
 		</div>
 		<div>
+		<!-- TODO на большихх разрешениях роверить карту -->
 		<div class="wrap-bottom">
 			<div class="wrap-wrap-map">
 				<div class="wrap-map">
@@ -49,7 +60,7 @@
 			</div>
 		</div>
 	</section>
-
+</div>
 <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 <script type="text/javascript" src="dist/scripts/jquery.js"></script>
 <script type="text/javascript" src="dist/scripts/main.js"></script>

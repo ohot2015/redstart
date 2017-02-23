@@ -1,5 +1,8 @@
 $(function(){
 	console.log('main.js init');
+	console.log('main.js init');
+	console.log('main.js init');
+	console.log('main.js init');
 	 ymaps.ready(init);
         var myMap,
             myPlacemark;
@@ -30,4 +33,4 @@ $(function(){
 
             myMap.geoObjects.add(myPlacemark);
         }
-})
+});
