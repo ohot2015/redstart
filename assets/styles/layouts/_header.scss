@@ -1,0 +1,26 @@
+header {
+	margin: 0 auto;
+	width:970px;
+	height: 44px;
+	line-height: 44px;
+	.wrap-header {
+		font-family: 'TTProstoSansCondensedDEMO-Bold';
+		color: $header-black;
+		span {
+			color:$main-red;
+		}
+	}
+	.snigir {
+		position: absolute;
+	    left: calc(50% - 117px);
+	    top: 5px;
+	    z-index:1;
+	}
+}
+
+@media only screen and (max-width: 970px) {
+	header {
+		width:420px;
+		height: 22px;
+	}
+}

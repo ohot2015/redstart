@@ -264,7 +264,6 @@ gulp.task('watch', function() {
 gulp.task('build', function(callback) {
   runSequence('styles',
               'scripts',
-              'serve',
               ['fonts', 'images'],
               callback);
 });
@@ -282,13 +281,13 @@ gulp.task('wiredep', function() {
     .pipe(gulp.dest(path.source + 'styles'));
 });
 
-gulp.task('serve' , function() {
-    browserSync.init({
-        proxy: './'
-    });
+// gulp.task('serve' , function() {
+//     browserSync.init({
+//         proxy: './'
+//     });
 
- browserSync.watch(['src/**', path.source]).on('change',browserSync.reload)
-})
+//  browserSync.watch(['src/**', path.source]).on('change',browserSync.reload)
+// })
 
 // ### Gulp
 // `gulp` - Run a complete build. To compile for production run `gulp --production`.
