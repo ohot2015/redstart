@@ -1,8 +1,5 @@
 $(function(){
 	console.log('main.js init');
-	console.log('main.js init');
-	console.log('main.js init');
-	console.log('main.js init');
 	 ymaps.ready(init);
         var myMap,
             myPlacemark;
@@ -28,9 +25,6 @@ $(function(){
 	            // её "ножки" (точки привязки).
 	            iconImageOffset: [-5, -38]
 	        });
-
-
-
             myMap.geoObjects.add(myPlacemark);
         }
 });

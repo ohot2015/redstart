@@ -27,9 +27,49 @@
 	</header>
 
 	<section class="pos-abs">
-		<div class="fbc3">
-			<div class="ffc3">
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis reiciendis minima est? Labore nemo possimus est commodi in distinctio fuga ut numquam iste consequatur expedita accusamus exercitationem at enim inventore beatae, officia sapiente? Vel velit repellat eius quod perferendis ducimus molestiae, voluptatum consequatur necessitatibus molestias iure incidunt voluptas, dolore eaque!
+		<div class="wrap-swg">
+			<svg>
+		  		<polyline points="
+		  			0,178
+		  			970,0
+		  			970,793
+		  			0,700
+		  			0,178
+		  			" stroke-width="0" stroke="rgb(87,92,100)" fill="rgb(87,92,100)">
+			</svg>
+			<div class="wrap-gray-blok">
+				<div class="wrap-header">
+					<h2>рекламное агенство</h2>
+					<span class="header-span"><span>red</span>start<sup>*</sup>- это:</span>
+				</div>
+				<div class="row">
+					<div class="col-md-6"><span>Надежный партнер </span>в планировании и реализации рекламных проектов любого уровня сложности на всех медиа на территории России и стран СНГ. Наш опыт работы на медийном рынке - более 10 лет.</div>
+					<div class="col-md-6"><span>Один из лидеров рынка </span>по закупке региональной рекламы. Мы являемся эксклюзивным партнером медийного холдинга GroupM в части закупки региональной рекламы на телевидении с 2008 года.</div>
+				</div>
+				<div class="footnote"><sup>*</sup>Юридическое наименование - ООО «РТ»</div>
+			</div>
+		</div>
+
+		<div class="wrap-width-change">
+			<div class="wrap-header">
+				<h1>Широкий выбор медиа</h1>
+				<spam>и инструменты для решения ваших задач</spam>
+			</div>
+			<div class="wrap-icon">
+				<div class="row">
+					<div class="col-md-4">
+						<img src="" alt="">
+						<img src="" alt="">
+					</div>
+					<div class="col-md-4">
+						<img src="" alt="">
+						<img src="" alt="">
+					</div>
+					<div class="col-md-4">
+						<img src="" alt="">
+						<img src="" alt="">
+					</div>
+				</div>
 			</div>
 		</div>
 	</section>
