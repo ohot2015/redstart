@@ -1,11 +1,12 @@
 header {
 	margin: 0 auto;
-	width:970px;
+	width: 970px;
 	height: 44px;
 	line-height: 44px;
 	.wrap-header {
 		font-family: 'TTProstoSansCondensedDEMO-Bold';
 		color: $header-black;
+		cursor:pointer;
 		span {
 			color:$main-red;
 		}
@@ -18,9 +19,3 @@ header {
 	}
 }
 
-@media only screen and (max-width: 970px) {
-	header {
-		width:420px;
-		height: 22px;
-	}
-}

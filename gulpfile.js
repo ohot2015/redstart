@@ -1,24 +1,26 @@
 // ## Globals
+var gulp         = require('gulp');
+
 var argv         = require('minimist')(process.argv.slice(2));
 var autoprefixer = require('gulp-autoprefixer');
 var browserSync  = require('browser-sync').create();
 var changed      = require('gulp-changed');
 var concat       = require('gulp-concat');
+var cssNano      = require('gulp-cssnano');
 var flatten      = require('gulp-flatten');
-var gulp         = require('gulp');
 var gulpif       = require('gulp-if');
 var imagemin     = require('gulp-imagemin');
 var jshint       = require('gulp-jshint');
 var lazypipe     = require('lazypipe');
 var less         = require('gulp-less');
 var merge        = require('merge-stream');
-var cssNano      = require('gulp-cssnano');
 var plumber      = require('gulp-plumber');
 var rev          = require('gulp-rev');
 var runSequence  = require('run-sequence');
 var sass         = require('gulp-sass');
 var sourcemaps   = require('gulp-sourcemaps');
 var uglify       = require('gulp-uglify');
+var ftp          = require('gulp-ftp');
 
 // See https://github.com/austinpray/asset-builder
 var manifest = require('asset-builder')('./assets/manifest.json');
@@ -282,14 +284,29 @@ gulp.task('wiredep', function() {
     .pipe(gulp.dest(path.source + 'styles'));
 });
 
-// gulp.task('serve' , function() {
-//     browserSync.init({
-//         proxy: './'
-//     });
-
-//  browserSync.watch(['src/**', path.source]).on('change',browserSync.reload)
-// })
-
+gulp.task('ftp', function () {
+    return gulp.src([
+        'index.php',
+        'dist/**/*.css',
+        'dist/**/*.js',
+        'dist/**/*.ttf',
+        'dist/**/*.eot',
+        'dist/**/*.wof',
+        'dist/**/*.png',
+        'dist/**/*.jpg',
+        'dist/**/*.jpeg',
+        'dist/**/*.ico'
+        ])
+        .pipe(ftp({
+            host: '3aaa.ml',
+            user: 'user212_test',
+            pass: '3aaa.ml'
+        }))
+        // you need to have some kind of stream after gulp-ftp to make sure it's flushed
+        // this can be a gulp plugin, gulp.dest, or any kind of stream
+        // here we use a passthrough stream
+        .pipe(gutil.noop());
+});
 // ### Gulp
 // `gulp` - Run a complete build. To compile for production run `gulp --production`.
 gulp.task('default', ['clean'], function() {

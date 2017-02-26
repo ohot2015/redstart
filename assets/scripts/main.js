@@ -1,5 +1,27 @@
 $(function(){
 	console.log('main.js init');
+		//плавная прокрутка
+	var $page = $('html, body');
+	$('a[href*="#"]').click(function () {
+		$page.animate({
+			scrollTop: $($.attr(this, 'href')).offset().top
+		}, 500);
+		return false;
+	});
+
+	function resize () {
+		console.log(window.innerWidth);
+		if (window.innerWidth < 970 ) {
+
+			//$('polyline','.wrap-swg svg').attr('points','0,78	420,0 420, 293	0,200	0,78');
+		} else {
+			//$('polyline','.wrap-swg svg').attr('points','0,178	970,0 970,793 0,700	0,178');
+		}
+	}
+	$(window).resize(function() {
+		resize();
+	});
+	//document.getElementById("polygon").setAttribute("points", "100,0 50,0 100,100");
 	 ymaps.ready(init);
         var myMap,
             myPlacemark;
