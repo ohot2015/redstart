@@ -2,6 +2,9 @@ body {
 	max-width: 1980px;
 	margin:0 auto;
 }
+.wrpap-all{
+	overflow: hidden;
+}
 section {
 	overflow: hidden;
 	position: relative;
@@ -82,9 +85,10 @@ section {
 	width: 970px;
 	left: calc(50% - 970px/2);
 	position: absolute;
-	height:4000px;
+	height:3950px;
 	z-index: 10;
 	overflow: hidden;
+	top:50px;
 	.wrap-swg {
 		position: relative;
 		width:100%;
@@ -93,43 +97,61 @@ section {
 			transform: translate(0px,88px);
 			height: 800px;
 		}
+    	sup.end {
+    		font:{
+    			size:248px;
+    			family:RubikBold;
+    		} 
+	     top: 561px;
+		    left: 407px;
+		    position: absolute;
+		    color: rgb(100,105,112);
+    	}
 		.wrap-gray-blok {
 			color:white;
 			position: absolute;
 			left:65px;
-			top:350px;
-			text-align: left;
+			top:330px;
+			text-align: left;			
+    	line-height: 18px;
 			.wrap-header {
 				margin-left: 30px;
 				line-height: 50px;
 				text-transform: uppercase;
 				h2 {
-					font-size: 14px;
+					font-size: 14px;				
+				}
+				sup{
+					font-size: 28px;
+    			top: -20px;
 				}
 				span.header-span {
 					font-size: 48px;
+					font-family: RubikBold;
 					span {
+						font-family: RubikBold;
 						color: red;
 					}
 				}
 			}
 			.col-md-6 {
-				margin-top:90px;
+				margin-top:80px;
 				font-size: 16px;
-				font-family: NotoSansItalic;
+				font-family: RubikLightItalic;
 				text-align: left;
 				span {
-					font-family: NotoSansBoldItalic;
+					font-family: RubikLightItalic;
 					font-size: 16px;
 				}
 			}
 			.footnote {
 				margin:75px 32px;
 				font-size: 12px;
-				font-family: NotoSansItalic;
+				font-family: RubikLightItalic;
 				sup {
 					font-weight: bold;
-					font-size: 12px;
+					top:-2px;
+					font-size: 15px;
 				}
 			}
 		}
@@ -142,11 +164,12 @@ section {
 			margin-left:30px;
 			text-transform: uppercase;
 			h2 {
-				font-size: 46px;
-				font-weight: bold;
+				font: {
+					family: RubikBold;
+					size: 46px;					
+				}				
 			}
-			span {
-				font-weight: bold;
+			span {				
 				font-size: 18px;
 			}
 		}
@@ -166,7 +189,12 @@ section {
 						font-weight: bold;
 						text-transform: uppercase;
 						sup {
-							font-size: 18px;
+							font:{
+								size: 28px;	
+								family: RubikLight;
+								weight:100;
+							}
+							top:2px;
 							color: red;
 						}
 					}
@@ -183,19 +211,24 @@ section {
 		}
 		.footnote {
 			margin-top: 100px;
-			margin-left:130px;
-			font-family: NotoSansItalic;
+			margin-left:79px;
+			font-family: RubikLightItalic;
 			font-size: 12px;
-			color: #727272;
+			color: #252525;
 			span {
-				font-family: NotoSansItalic;
+				font-family: RubikLightItalic;
 				font-size: 12px;
-				color: #727272;
+				color: #252525;
 				display: block;
 				margin-left:8px;
 			}
 			sup {
-				font-size: 18px;
+				font:{
+					size: 28px;	
+					family: RubikLight;
+					weight:100;
+				}
+				top:2px;
 				color: red;
 			}
 		}
@@ -219,11 +252,12 @@ section {
 				line-height: 50px;
 				text-transform: uppercase;
 				h2 {
-					font-weight: bold;
+					font-family: RubikBold;
 					font-size: 48px;
+					margin-bottom: -10px;
 				}
 				span.header-span {
-					font-size: 18px;
+					font-size: 18px;					
 					span {
 						display: block;
     					margin-top: -31px
@@ -231,9 +265,9 @@ section {
 				}
 			}
 			ul {
-				margin: 50px 65px;
+				margin: 30px 65px;
 				li {
-					line-height: 35px;
+					line-height: 50px;
 					list-style-type: none; /* Убираем маркеры */
 					font-weight: none;
 					letter-spacing: 1px;
@@ -241,6 +275,7 @@ section {
 					font-size: 22px;
 
 					span {
+						font-family: RubikBold;
 						color: black;
 					}
 				}
@@ -253,11 +288,13 @@ section {
 			font-size: 48px;
 			text-align: left;
 			margin-left: 100px;
+			font-family: RubikBold;
 		}
 		.advantages {
 			.header {
-				font-size: 27px;
+				font-size: 28px;
 				display: inline-block;
+				text-transform: uppercase;
 			}
 			img {
 				display: inline-block;
@@ -268,15 +305,18 @@ section {
 				vertical-align: middle;
 				.header {
 					text-align: left;
-					font-weight: bold;
+					font-family: RubikBold;
 				}
 				.descrip {
 					width: 730px;
+					font-size: 16px;
+					font-family: RubikLightItalic;
+					margin-top: -8px;
 				}
 			}
 		}
 		.vigoda {
-			margin-left: 380px;
+			margin-left: 72px;
 			.wrap-adv {
 				width: 245px;
 			}
@@ -313,36 +353,40 @@ section {
 		}
 	}
 	.wrap-slider {
-		margin-top: 280px;
+		margin-top: 180px;
+		text-align:center;
 		.header {
 			text-align: left;
 			margin-left: 90px;
 			font-size: 48px;
-			font-weight: bold;
+			font-family: RubikBold;
 			text-transform: uppercase;
 		}
-		#myCarousel{
+		.slick-carousel{
 			height:90px;
-			margin-bottom: 60px;
-			margin-top: 50px;
-			.carousel-control {
-				background: white;
-				img {
-					margin-top: calc(50% - 120px/2)
+			margin: {
+				bottom: 60px;
+				top: 50px;		
+				left:100px;
+			}
+			width: 800px;		
+			.fa-arrow-left {
+				img{
+					position: absolute;
+				    z-index: 9;
+				    left: -50px;
+				    top:23px;					
 				}
 			}
-			.left {
-				text-align: left;
-			}
-			.right {
-				text-align: right;
-			}
-			.carousel-inner {
-				text-align: center;
+			.fa-arrow-right {
 				img {
-					margin-left: 386px !important;
-				}
-			}
+					position: absolute;
+				    z-index: 9;
+				    right: -50px;
+				    top:23px;				
+				}				
+			}			
+				
 			// .active img{
 			// 	margin-left: calc(50% - 970px/2) !important;
 			// 	text-align: center;
@@ -354,6 +398,7 @@ section {
 	.wrap-swg-bottom {
 		position: relative;
 		width:100%;
+		top:120px;
 		svg {
 			width:100%;
 			//transform: translate(0px,88px);
@@ -369,17 +414,22 @@ section {
 			.wrap-header {
 				margin-left: 30px;
 				line-height: 50px;
-				text-transform: uppercase;
 				h2 {
-					font-weight: bold;
+					text-transform: uppercase;
+					font-family: RubikBold;
 					font-size: 48px;
 					margin-bottom: 20px;
 				}
 				span.header-span {
 					font-size: 18px;
+					font-family: RubikLightItalic;
 					display: block;
 					span {
-						color:$main-red;
+						text-transform: uppercase;
+						font-family: RubikLightItalic;
+						span{
+							color:$main-red;							
+						}
 					}
 				}
 			}

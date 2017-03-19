@@ -2,30 +2,34 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width" />
+
 	<title>Redstart</title>
+	<link rel="stylesheet" href="dist/styles/slick-carousel.css">
+	<link rel="stylesheet" href="dist/styles/slick-theme.css">
 	<link rel="stylesheet" href="dist/styles/main.css">
 </head>
 <body>
-<div class="wrap-all">
+<div class="wrap-all"> 
 	<header>
 		<div class="wrap-header">
+		<div class="container-fluid">
 			<div class="row">
-				<div class="col-md-1 text-left"><img src="dist/images/menu.png" alt=""></div>
-				<div class="col-md-2"><a href="#redstart"><span>red</span>start</a></div>
-				<div class="col-md-2"><a href="#media">медиа</a></div>
-				<div class="col-md-3"><a href="#priem">приемущества</a></div>
-				<div class="col-md-2"><a href="#client">клиенты</a></div>
-				<div class="col-md-2 text-right"><a href="#contact">контакты</a></div>
+				<div class="col-md-1 col-sm-1 text-left"><img class="buter" src="dist/images/menu.png" alt=""></div>
+				<div class="col-md-2 col-sm-2"><a href="#redstart"><span>red</span>start</a></div>
+				<div class="col-md-2 col-sm-2"><a href="#media">медиа</a></div>
+				<div class="col-md-3 col-sm-3"><a href="#priem">приемущества</a></div>
+				<div class="col-md-2 col-sm-2"><a href="#client">клиенты</a></div>
+				<div class="col-md-2 col-sm-2 text-right"><a href="#contact">контакты</a></div>
 			</div>
 		</div>
-
+		</div>
+	</header>
 		<div class="row">
 			<div class="col-md-12 text-center">
 				<img class="snigir" src="dist/images/snigir.png" alt="">
 			</div>
 		</div>
-
-	</header>
 
 	<section class="pos-abs">
 		<div class="wrap-swg">
@@ -38,12 +42,14 @@
 		  			0,178
 		  			" stroke-width="0" stroke="rgb(87,92,100)" fill="rgb(87,92,100)">
 			</svg>
+			<sup class="end">&</sup>
 			<div class="wrap-gray-blok" id="redstart">
 				<div class="wrap-header">
-					<h2>рекламное агенство</h2>
+					<h2>рекламное агентство</h2>
 					<span class="header-span"><span>red</span>start<sup>*</sup>- это:</span>
 				</div>
 				<div class="row">
+
 					<div class="col-md-6"><span>Надежный партнер </span>в планировании и реализации рекламных проектов любого уровня сложности на всех медиа на территории России и стран СНГ. Наш опыт работы на медийном рынке - более 10 лет.</div>
 					<div class="col-md-6"><span>Один из лидеров рынка </span>по закупке региональной рекламы. Мы являемся эксклюзивным партнером медийного холдинга GroupM в части закупки региональной рекламы на телевидении с 2008 года.</div>
 				</div>
@@ -89,7 +95,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="footnote"><sup>*</sup>Прямая и спонсорская реклама на любых телеканалах и радиостанциях,<span> в отдельных регионах или на территории всей страны</span></div>
+			<div class="footnote"><sup>*</sup>Прямая и спонсорская реклама на любых телеканалах и радиостанциях,<span> &nbsp;в отдельных регионах или на территории всей страны</span></div>
 		</div>
 		<div class="wrap-swg-red" >
 			<svg>
@@ -154,17 +160,36 @@
 
 		<div class="wrap-slider" id="client">
 		 	<div class="header">наши клиенты</div>
+		 	<div class="wrap-slick-carousel">
+				<div class="slick-carousel">
+					
+					<div class="item"><img src="dist/images/1.jpg" alt=""></div>
+					<div class="item"><img src="dist/images/2.jpg" alt=""></div>
+					<div class="item"><img src="dist/images/3.jpg" alt=""></div>
+					<div class="item"><img src="dist/images/4.jpg" alt=""></div>
+					<div class="item"><img src="dist/images/5.jpg" alt=""></div>
+					<div class="item"><img src="dist/images/6.jpg" alt=""></div>
+					<div class="item"><img src="dist/images/7.jpg" alt=""></div>
+					<div class="item"><img src="dist/images/8.jpg" alt=""></div>
+					<div class="item"><img src="dist/images/9.jpg" alt=""></div>
+					
 
-			<div id="myCarousel" class="carousel slide" data-ride="carousel">
-			  <!-- Indicators -->
-	<!-- 		  <ol class="carousel-indicators">
-			    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-			    <li data-target="#myCarousel" data-slide-to="1"></li>
-			    <li data-target="#myCarousel" data-slide-to="2"></li>
-			    <li data-target="#myCarousel" data-slide-to="3"></li>
-			  </ol> -->
-
-			  <!-- Wrapper for slides -->
+					<!-- <div class="item"><img src="dist/images/client-gsk.png" alt=""></div>
+					<div class="item"><img src="dist/images/client-w.png" alt=""></div>
+					<div class="item"><img src="dist/images/client-audi.png" alt=""></div>
+					<div class="item"><img src="dist/images/client-uniqlo.png" alt=""></div>
+					<div class="item"><img src="dist/images/client-gaz.png" alt=""></div>
+					<div class="item"><img src="dist/images/client-x5.png" alt=""></div>
+					<div class="item"><img src="dist/images/client-dilmah.png" alt=""></div>
+					<div class="item"><img src="dist/images/client-riter.png" alt=""></div>
+					<div class="item"><img src="dist/images/client-karcher.png" alt=""></div>
+					<div class="item"><img src="dist/images/client-cherkizovo.png" alt=""></div>
+					<div class="item"><img src="dist/images/client-ikea.png" alt=""></div>
+					<div class="item"><img src="dist/images/client-groupon.png" alt=""></div>
+					<div class="item"><img src="dist/images/client-avito.png" alt=""></div> -->
+				</div>			 			
+			</div>
+			<!-- <div id="myCarousel" class="carousel slide" data-ride="carousel">			
 			  <div class="carousel-inner" role="listbox">
 				  <div class="item active"><img src="dist/images/client-nmjk.png" alt=""></div>
 				  <div class="item"><img src="dist/images/client-gsk.png" alt=""></div>
@@ -180,9 +205,7 @@
 				  <div class="item"><img src="dist/images/client-ikea.png" alt=""></div>
 				  <div class="item"><img src="dist/images/client-groupon.png" alt=""></div>
 				  <div class="item"><img src="dist/images/client-avito.png" alt=""></div>
-			  </div>
-
-			  <!-- Left and right controls -->
+			  </div>			  
 			  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
 			  <img src="dist/images/arrow-left.png" alt="">
 			    </span>
@@ -193,7 +216,7 @@
 			    </span>
 			    <span class="sr-only">Next</span>
 			  </a>
-			</div>
+			</div> -->
 		</div>
 		<div class="wrap-swg-bottom">
 			<svg>
@@ -209,13 +232,13 @@
 				<div class="wrap-header">
 					<h2>контакты</h2>
 					<span class="header-span">
-					рекламное агенство <span>red</span>start
+					Рекламное агентство <span><span>red</span>start</span>
 					</span>
 					<span class="header-span">
 					+7 495 793-59-01
 					</span>
 					<span class="header-span">
-					127473, москва, суворовская пл., д. 1/52, корпус 1, подъезд 4
+					127473, Москва, Суворовская пл., д. 1/52, корпус 1, подъезд 4
 					</span>
 				</div>
 				<!-- <ul>
@@ -256,6 +279,10 @@
 </div>
 <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 <script type="text/javascript" src="dist/scripts/jquery.js"></script>
+<script type="text/javascript" src="dist/scripts/slick-carousel.js"></script>
 <script type="text/javascript" src="dist/scripts/main.js"></script>
+	<script id="__bs_script__">//<![CDATA[
+    document.write("<script async src='http://localhost:3000/browser-sync/browser-sync-client.js?v=2.18.8'><\/script>".replace("redstart", location.hostname));
+//]]></script>
 </body>
 </html>

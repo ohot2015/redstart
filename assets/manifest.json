@@ -12,26 +12,20 @@
       ],
       "main": true
     },
-    "maps.js": {
-      "files": [
-        "scripts/maps.js"
-      ]
-    },
-    "lightbox.js": {
-      "files": [
-        "scripts/lightbox.js"
-      ]
-    },
-    "customizer.js": {
-      "files": [
-        "scripts/customizer.js"
-      ]
-    },
     "jquery.js": {
       "bower": ["jquery"]
+    },    
+    "slick-carousel.js": {
+      "bower": ["slick-carousel"]
+    },
+    "slick-carousel.css": {
+      "bower": ["slick-carousel"]
+    },
+    "slick-theme.css": {
+      "bower": ["slick-theme"]
     }
   },
   "config": {
-    "devUrl": "http://localhost/redstart"
+    "devUrl": "http://redstart"
   }
 }
