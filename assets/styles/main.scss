@@ -1,0 +1,166 @@
+@import "common/variables";
+
+// Automatically injected Bower dependencies via wiredep (never manually edit this block)
+// bower:scss
+@import "../../bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+@import "../../bower_components/slick-carousel/slick/slick.scss";
+// endbower
+* {
+	font-family: 'RubikLight';
+}
+html,body,.wrap-all {
+	width:100%;
+}
+a,
+a:visited,
+a:active ,
+a:hover {
+	text-decoration: none;
+	color: black ;
+	font-family: 'RubikLight';
+}
+@import "common/fonts";
+@import "layouts/header";
+@import "layouts/footer";
+@import "layouts/pages";
+@import "layouts/gallery";
+
+@media only screen and (max-width: 970px) {	
+//@media screen and (max-width: 768px) {
+	*{
+		font-size: 12px;
+	}
+
+	header {
+		width: 320px;
+		height: 22px;
+		// .wrap-header {
+		// 	width:320px;
+		// 	margin-left: calc(50% - 320px/2);
+		// }
+	}
+	.snigir {
+		width: 150px;
+		height:150px;
+		margin-left:130px;
+	}	
+	.pos-abs {		
+		width: 320px;
+		left: calc(50% - 320px/2);
+		height:3480px;
+		.wrap-header {
+
+		}
+		.wrap-swg .wrap-gray-blok {
+			top: 275px;
+			left: 30px !important;
+			.wrap-header span.header-span {
+				font-size: 20px;
+				span {
+					font-size: 20px;					
+				}
+			}
+			.col-md-6 {
+				margin-top: 20px;
+				font-size: 12px;	
+				width: 280px; 			
+			}
+		}
+		.wrap-width-change {
+			margin-top:50px;
+			margin-left:0;
+			text-align: center;
+			
+			h2 {				
+				font-size: 20px !important;
+			}
+			span {
+				font-size: 12px !important;
+			}
+			.footnote {
+				margin-left: 30px;				
+			}
+		}
+		.wrap-swg-red .wrap-red-blok {
+			top: 120px;
+			left: 0px;
+		
+			h2 {	
+				margin-top: 80px;			
+				font-size: 20px !important;
+			}
+			span {
+				width:280px;
+				font-size: 12px !important;
+			}
+			ul {
+				margin:0;
+				width : 280px;
+			}
+			li {
+				font-size: 12px !important;
+			}
+		}
+		.wrap-advantages {
+			.main-header {
+				font-size: 20px !important;				
+				text-transform: uppercase;
+				margin-bottom: 10px;
+			}
+			.descrip {
+					width:280px !important;
+				}
+
+			.advantages {
+				.header {
+					font-size: 18px;
+				}
+				img {
+					display:none;
+				}
+
+			}
+			margin-left:10px !important;
+			font-size: 20px;
+		} 
+		.wrap-advantages div {
+			.main-header {
+				font-size: 20px !important;				
+			}
+			margin-left:10px !important;
+			font-size: 20px;
+		} 
+		.wrap-slider {
+			display:none;
+			margin-top: 70px;
+			.header {				
+				margin:0;	
+				margin-left:20px;
+				font-size: 20px;	
+			}
+			.slick-carousel {
+				width:440px;
+			}
+		}
+		.wrap-swg-bottom {
+			margin-top : 80px;
+			.wrap-red-blok {
+				left:10px;
+			}
+			h2 {				
+				font-size: 20px !important;
+			}
+			span {
+				font-size: 12px;
+				width : 260px;
+
+			}
+		}
+	}
+	.blok3 {
+		height:580px !important;
+	}
+	section .fbc2 {
+		transform:perspective(1000px) rotateY(-7.5deg) translate(-775px,-165px);
+	}
+}
