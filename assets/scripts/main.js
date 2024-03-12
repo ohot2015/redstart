@@ -1,3 +1,10 @@
+import '../styles/main.scss'
+import $ from 'jquery';
+import 'slick-carousel'
+//import 'bootstrap3'
+
+global.jQuery = $;
+global.$ = $;
 $(function(){
 	console.log('main.js init');
 		//плавная прокрутка
